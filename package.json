@@ -52,10 +52,12 @@
     "eslint-plugin-promise": "3.4.0",
     "eslint-plugin-standard": "2.0.1",
     "fakefile": "^0.0.8",
+    "image-size": "0.5.0",
     "lanyon": "0.0.32",
     "mocha": "^3.2.0",
     "nodemon": "1.11.0",
     "npm-run-all": "^3.1.2",
+    "request": "2.79.0",
     "rimraf": "2.5.4",
     "source-map-support": "^0.4.6"
   },
