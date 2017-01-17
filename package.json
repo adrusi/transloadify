@@ -1,6 +1,6 @@
 {
   "name": "transloadify",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "CLI client for transloadit",
   "scripts": {
     "fix": "eslint src test --fix",
@@ -40,7 +40,10 @@
   "license": "MIT",
   "bin": "./bin/cmd.js",
   "main": "./lib/index.js",
-  "files": ["lib", "bin"],
+  "files": [
+    "lib",
+    "bin"
+  ],
   "dependencies": {
     "node-watch": "^0.4.1",
     "q": "1.4.1",
