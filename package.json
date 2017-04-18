@@ -2,6 +2,7 @@
   "name": "transloadify",
   "version": "0.2.1",
   "description": "CLI client for transloadit",
+  "repository": "https://github.com/transloadit/transloadify",
   "scripts": {
     "fix": "eslint src test --fix",
     "lint": "eslint src test",
@@ -18,7 +19,7 @@
     "release": "npm version ${SEMANTIC:-patch} -m \"Release %s\" && npm run build && git push && git push --tags && npm publish",
     "test": "npm-run-all build mocha",
     "mocha": "NODE_ENV=test mocha --compilers js:babel-register --reporter spec test/",
-    "build": "./node_modules/babel-cli/bin/babel.js src/ -d lib/",
+    "build": "babel src/ -d lib/ --source-maps",
     "prestart": "npm run build",
     "start": "npm run web:start",
     "prepublish": "npm run build",
@@ -41,11 +42,10 @@
   },
   "author": "Adrian Sinclair <adrian@transloadit.com>",
   "license": "MIT",
-  "bin": "./bin/cmd.js",
+  "bin": "./lib/cmd.js",
   "main": "./lib/index.js",
   "files": [
     "lib",
-    "bin",
     "_transloadify"
   ],
   "dependencies": {
@@ -73,7 +73,7 @@
     "source-map-support": "^0.4.6"
   },
   "babel": {
-    "sourceMaps": "inline",
+    "sourceMaps": true,
     "presets": [
       "es2015"
     ]

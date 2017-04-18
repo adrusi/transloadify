@@ -9,9 +9,6 @@ export default function help (output, client, { helpMode: mode, helpAction: acti
   output.print(msg.slice(1))
 }
 
-const register = `
-Command: register`
-
 const assemblies = `
 Command: assemblies
 Subcommands:
@@ -57,7 +54,6 @@ Options:
 
 These are the supported commands.
 Refer to transloadify COMMAND [SUBCOMMAND] --help for specific usage.
-${register}
 ${assemblies}
 ${templates}
 ${notifications}
@@ -200,7 +196,6 @@ Months should be specified in YYYY-MM format.`
 
 const messages = {
   default: main,
-  register: register,
   assemblies: {
     default: assemblies,
     create: assembliesCreate,

@@ -2,12 +2,24 @@
 
 # Transloadify
 
+A command line interface to [Transloadit](https://transloadit.com)'s file
+uploading and encoding service.
+
 <!--more-->
+
+## Intro
+
+[Transloadit](https://transloadit.com) is a service that helps you handle file
+uploads, resize, crop and watermark your images, make GIFs, transcode your
+videos, extracth thumbnails, generate audio waveforms, and so much more. In
+short, [Transloadit](https://transloadit.com) is the Swiss Army Knife for your
+files.
 
 Transloadify is a command line interface to the
 [Transloadit](https://transloadit.com) API. It is a way for non-programmers to
 access the service, and serves as the shell script SDK. It can also be used as a
-cloud-based transcoding and media processing utility.
+utility for processing and transcoding media in the cloud, without concern to
+the details of the [Transloadit](https://transloadit.com) API.
 
 ## Features
 
@@ -186,9 +198,10 @@ $ transloadify bills get 2016-11 --json
 
 Please see the [GETTING-STARTED.md](./GETTING-STARTED.md) file.
 
-## Changelog
+## Documentation
 
-Please see the [CHANGELOG.md](./CHANGELOG.md) file.
+Please refer to `transloadify --help` for a directory of documentation for
+Transloadify's various functionality.
 
 ## Frequently Asked Questions
 
@@ -200,4 +213,4 @@ Please see the [FAQ.md](./FAQ.md) file.
 
 ## License
 
-[The MIT License](LICENSE)
+[MIT Licensed](LICENSE)

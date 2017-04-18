@@ -519,7 +519,6 @@ const subcommands = {
 
     sync (opts, tgts) {
       let err = validate(opts, tgts,
-
                 allowOptions(anyOf('recursive'),
                              opt => `templates sync doesn't accept the option --${opt.name}`))
 
